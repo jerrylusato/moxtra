@@ -20,9 +20,9 @@ emanueldeopeter2003@gmail.com	ugalimtamu
 To run this script you must have:
 - Mozilla Firefox installed and
 - Mozilla Firefox's ***geckodriver*** webdriver binary extracted and placed in the right folder
-    - ***/usr/local/bin'*** for MacOS
+    - ***/usr/local/bin*** for MacOS
 
-> The download link for ***geckodriver***(For MacOS): https://github.com/mozilla/geckodriver/releases
+> The download link for ***geckodriver***(for MacOS): https://github.com/mozilla/geckodriver/releases
 
 [The script makes use of automated headless browsing]
 
