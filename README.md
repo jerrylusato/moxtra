@@ -4,7 +4,7 @@
 
 It filters the correct logins from 'logins.txt' and saves both the correct and incorrect logins in two different '.txt' files.
 
-Note: The logins.txt file should look like below:
+Note: The logins.txt file should look like below*:
 
 ```
 emanueldeopeter2003@gmail.com	ugalimtamu
@@ -13,7 +13,7 @@ emanueldeopeter2003@gmail.com	ugalimtamu
  4	Emanueldeopeter2003@gmail.com	ugalimtamu
  5	0713908464	908464
 ```
--Of course, all of these logins are incorrect.
+*All logins are incorrect.
 
 ### Running the script
 
