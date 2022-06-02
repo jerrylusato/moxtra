@@ -13,17 +13,17 @@ emanueldeopeter2003@gmail.com	ugalimtamu
  4	Emanueldeopeter2003@gmail.com	ugalimtamu
  5	0713908464	908464
 ```
-Note: All logins above are incorrect.
+*All logins above are incorrect*
 
 ### Running the script
 
 To run this script you must have:
 - Mozilla Firefox installed and
 - Mozilla Firefox's ***geckodriver*** webdriver binary extracted and placed in the right folder
- - */usr/local/bin'* for MacOS
+    - ***/usr/local/bin'*** for MacOS
 
 > The download link for ***geckodriver***(For MacOS): https://github.com/mozilla/geckodriver/releases
 
-(The script makes use of automated headless browsing)
+[The script makes use of automated headless browsing]
 
 ***Happy coding!***
